@@ -35,7 +35,7 @@
   },
   "environment": {
     "showdashboard": true,
-    "dashboards": [{"name": "URL", "href": "https://www.katacoda.com"}],
+    "dashboards": [{"name": "localhost 8000", "href": "http://localhost:8000/"}],
      "uilayout": "terminal"
   },
   "backend": {
