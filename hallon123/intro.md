@@ -1,3 +1,3 @@
 ## How to use Splunk through a Docker container
-This tutorial will teach you how to use the tool splunk enterprise. Splunk is a monotering tool used by many companies in order to analyse data comming from vairous systems.  
-Using docker to set up splunk is easy and does not require you to install unecessary software on you machine.
+This tutorial will teach you how to use the tool splunk enterprise. Splunk is a monotering tool used by many companies in order to analyse data comming from various systems.  
+Using docker to set up splunk is easy and does not require you to install unecessary software on you machine. This tutorial will give you an insight into how to use splunk with some basic data.  Remember that this instance of Splunk is entierly EPHEMERAL which is to say it will not remebemer anything you put in, when you close this tutorial all data that you uploaded to splunk will be lost. This is just to create a playground where you can test out splunk.
