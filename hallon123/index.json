@@ -34,7 +34,9 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "showdashboard": true,
+    "dashboards": [{"name": "URL", "href": "https://www.katacoda.com"}],
+     "uilayout": "terminal"
   },
   "backend": {
     "imageid": "ubuntu:2004"
