@@ -1,17 +1,9 @@
 ## Setting up Splunk enterprize in Docker container
 
-First we must login to docker.
-
-`docker login`{{execute}}
-
-Next we will download the container image from the docker hub  
-
-`docker pull splunk/splunk`{{execute}}
-
 After the docker image has been downloaded we can start the container.
 replace <password> with a simple password that contains uppercase and lowercase letters, numbers and special characters like !#  
 
-`docker run -d -p 8000:8000 -e "SPLUNK_START_ARGS=--accept-license" -e "SPLUNK_PASSWORD=<password>" --name splunk splunk/splunk:latest`{{execute}}  
+`docker run -d -p 8000:8000 -e "SPLUNK_START_ARGS=--accept-license" -e "SPLUNK_PASSWORD=123abc456DEF!" --name splunk splunk/splunk:latest`{{execute}}  
 
 we will give an explanation to this command
 * the -d is to say that we are launching a detached image
