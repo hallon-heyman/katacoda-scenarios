@@ -1,6 +1,8 @@
 ## Setting up Splunk enterprize in Docker container
 
-`Docker login`{{execute}}
+First we must login to docker.
+
+`docker login`{{execute}}
 
 Next we will download the container image from the docker hub  
 
