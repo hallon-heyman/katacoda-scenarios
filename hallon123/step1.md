@@ -1,7 +1,7 @@
 # Introduction to Docker, the why and the how
 
 Docker is perhaps the worlds leading devops tool and many programmers will alreayd be familiar with it. If you feel confident in your understanding of Docker you can skip this part.
-Otherwise, or if you feel like you would like to refresh your knowledge this step will give you an adequate understanding of Docker, why docker is so popular, 
+Otherwise, or if you feel like you would like to refresh or deepen your knowledge of the docker technology, this step will give you an adequate understanding of how Docker functions, why docker is so popular, 
 and some basic usage of it. 
 
 ## The problem of server hosting
@@ -23,4 +23,5 @@ Docker was released as open-source in 2013 as a new approach to virtualisation w
 
 ## The Container Technology in brief
 
-
+Docker can be explained as a server-client based application where the server, also daemon, services requests from docker clients. These can be run on the same machine.
+Docker images are the building blocks of docker functionality. They are created in two different ways: from read only templates and docker files. Read only templates are essentially copies of base images, operating systems such as ubuntu version x are typically the base images. When something is added to the copy of such a base image, it is saved as a new image. Docker file however contain a list of instructions that are run when the docker build command is executed, as such it is an automated way of building an image.
