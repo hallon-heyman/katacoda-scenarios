@@ -10,8 +10,8 @@ We begin with a short introduction to Docker.
 
 ## Introduction to Docker, the why and the how
 
-Docker is perhaps the worlds leading devops tool and many programmers will alreayd be familiar with it. If you feel confident in your understanding of Docker you can skip this part.
-Otherwise, or if you feel like you would like to refresh or deepen your knowledge of the docker technology, this step will give you an adequate understanding of how Docker functions, why docker is so popular, 
+Docker is perhaps the worlds leading devops tool and many programmers will already be familiar with it. If you feel confident in your understanding of Docker you can skip this part.
+Otherwise, or if you feel like you would like to refresh or deepen your knowledge of the docker technology, this background and the following first step will give you an adequate understanding of how Docker functions, why docker is so popular, 
 and some basic usage of it. 
 
 ## The problem of server hosting
