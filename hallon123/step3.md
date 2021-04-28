@@ -16,11 +16,11 @@ The arguments in this command are explained as follows:
 After the command is run it will print out a large hex that is the identifier of the container. 
 To make sure that the container is running type  
 `docker container ls`{{execute}}  
-and look for the status to be healthy.
+and look for the status to be healthy, if it says health:starting you must wait until it only says "(healthy).
 
 
 Unfortunately, kanakoda is restricted in the sense that it does not support simulating individual user tabs, but it does support opening a new one for the new server we just got running from our container.
 After the container status is confirmed healthy as per above, you can click port 8000, the second terminal tab, and you will enter the Splunk enterprise app that we are now running from our container.
 You can login to the app with the username `admin` and the `<password>` you set in the previous command. 
   
-In the next step we will go through some instructions on how to configure the splunk app in order to be able to send data. 
+When you have logged in you can go onto the next step we will go through some instructions on how to configure the splunk app in order to be able to send data. 
