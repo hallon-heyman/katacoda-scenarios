@@ -11,16 +11,21 @@ In the top right corner press `Global Settings`
   
 In this window you want to make sure that the setting `All tokens` is enabled. 
 Also make sure that the HTTP port number corresponds to the same second port in the docker run command (should be port 8088). 
-The other options should not be something that you need to worry about due to them being optional. After that is done save the settings.  
+After that is done save the settings.  
   
 In the same window click on `New token` next to `Global Settings`.  
-Give the token a name of your own choice, and that should be the only setting on this page that you have to set up. click on next in the top.
-In the next page go down to index and add all the indexes, next click on review and then submit. The page should then view your created token, save this somewhere until the tutorial is done.  
+Give the token a name of your own choice. Click on next in the top to get to input settings.
+In the next page go down to index and add all the indexes by clicking `add all` , next click on review in the top and then submit.
+The page should then view your created token and isplay your `Token Value`, save this value anywhere of your choice, or just keep it in your clipboard (ctrl + c).
   
 From the same page you can click on the button `Start searching` to navigate to the search page where we will search for our data that we will upload.
 
 ### Uploading data
-Now we are going to upload data with this curl command. Make sure to attach the token you created at `<HEC Token>` to the command. The `-d` is to signal that we are sending data to splunk the format of the data can be in raw text or JSON format. Try sending this command a bunch of times with different values to the event parameter in the JSON data.
+Now we are going to upload data with this curl command back on this katakoda page. Make sure to attach the token you created at `<HEC Token>` to the command. The `-d` is to signal that we are sending data to splunk the format of the data can be in raw text or JSON format. Try sending this command a bunch of times with different values to the event parameter in the JSON data.
 
 `curl -k "https://localhost:8088/services/collector" -H "Authorization: Splunk <HEC Token>" -d '{"event":"hello world", "sourcetype":"manual"}'`  
+
+So for example <HEC Token> becomes 130d76e6-aa98-4ba9-b2db-fd78cXXXX33". You should receive a 
+  `{"text":"Success","code":0}$` if the steps have been correctly followed.
+ 
 In the next step we are going to explore how we can search for these events. 
