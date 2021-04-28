@@ -1,7 +1,7 @@
 ## Introduction to splunk
 ### Downloading image
 now that we have a introduction to docker and images we can start small by downloading the splunk enterprise image from the docker hub, to do this execute the following command.  
-``docker pull splunk/splunk:latest`{{execute}}  
+`docker pull splunk/splunk:latest`{{execute}}  
 This might take some time so in the mean time you can read about splunk down below.
 
 ### What is splunk
