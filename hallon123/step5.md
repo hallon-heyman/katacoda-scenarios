@@ -14,4 +14,4 @@ Another way to search for events is by searching for a specific timerange of the
 
 There is much you can do with splunk and we wont have time to go through all right now. 
 ## close down
-When you are done with this tutorial you want to make sure that you close down the container. This can be done by wrriting `docker container ls` and copying the unique idnetifier for the splunk container. And the executing the command `docker stop <id of container>` and if you want to you can also remove the container with `docker rm <id of container>`
+When you are done with this tutorial you want to make sure that you close down the container. This can be done by writing `docker container ls` and copying the unique idnetifier for the splunk container. And then executing the command `docker stop <id of container>` and if you want to you can also remove the container with `docker rm <id of container>`.
