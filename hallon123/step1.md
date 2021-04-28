@@ -24,4 +24,12 @@ Docker was released as open-source in 2013 as a new approach to virtualisation w
 ## The Container Technology in brief
 
 Docker can be explained as a server-client based application where the server, also daemon, services requests from docker clients. These can be run on the same machine.
-Docker images are the building blocks of docker functionality. They are created in two different ways: from read only templates and docker files. Read only templates are essentially copies of base images, operating systems such as ubuntu version x are typically the base images. When something is added to the copy of such a base image, it is saved as a new image. Docker file however contain a list of instructions that are run when the docker build command is executed, as such it is an automated way of building an image.
+Docker images are the building blocks of docker functionality. They are created in two different ways: from read only templates and docker files. Read only templates are essentially copies of base images, operating systems such as ubuntu version x are typically the base images. When something is added to the copy of such a base image, it is saved as a new image. Docker file however contain a list of instructions that are run when the docker build command is executed, as such it is an automated way of building an image. In this tutorial building will not be necessary as we are to pull the only container we need, but it is important to be aware of how these containers are created.
+
+The docker images can be used just like repositories through docker registries, where images can be pushed and pulled and distributed privately or publicly through the docker hub featre.
+
+A docker container is created from a docker image, that is, a docker container is run from the code that is saved in the image, the container refering to the process on the computer system.  The splunk container runs from an image of splunk code embedded with all the necessary dependencies for splunk to run. The docker engine runs every container from the same virtualised OS if possible,for example, for several containers using ubuntu it might just run one ubuntu kernel. This lessened isolation creates efficiency but reduces security. 
+
+This ends our brief introduction to docker as you should have all the understanding you need to know what goes on behind the scenes in this tutorial. In katakoda it is not necessary to login to docker as every terminal is logged in by default, but a good tutorial reminds its user even of the basics.
+
+docker login {{executable}}
