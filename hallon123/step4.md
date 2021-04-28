@@ -10,7 +10,7 @@ Start by going to your opened instance of splunk at localhost:8000 and navigate 
 In the top right corner press `Global Settings`
   
 In this window you want to make sure that the setting `All tokens` is enabled. 
-Also make sure that the HTTP port number coresponds to the same second port in the docker run command (should be port 8088). 
+Also make sure that the HTTP port number corresponds to the same second port in the docker run command (should be port 8088). 
 The other options should not be something that you need to worry about due to them being optional. After that is done save the settings.  
   
 In the same window click on `New token` next to `Global Settings`.  
