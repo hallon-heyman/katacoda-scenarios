@@ -20,8 +20,8 @@ To make sure that the container is running type
 `docker container ls`{{execute}}  
 and look for the status to be healthy.
 
-Unfortunately, kanakoda is restricted in the sense that it does not support simulating individual user tabs, but it does support opening a new one.
-After the container status is confirmed healthy you can click localhost:8000, the second terminal tab, and you will enter the Splunk enterprise app.
+Unfortunately, kanakoda is restricted in the sense that it does not support simulating individual user tabs, but it does support opening a new one for the new server we just got running from our container.
+After the container status is confirmed healthy you can click localhost:8000, the second terminal tab, and you will enter the Splunk enterprise app that we are now running from our container.
 You can login to the app with the username `admin` and the `<password>` you set in the previous command.  
   
 In the next step we will go through some instructions on how to configure the splunk app in order to be able to send data. 
