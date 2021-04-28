@@ -25,7 +25,7 @@ Now we are going to upload data with this curl command back on this katakoda pag
 
 `curl -k "https://localhost:8088/services/collector" -H "Authorization: Splunk <HEC Token>" -d '{"event":"hello world", "sourcetype":"manual"}'`  
 
-So for example <HEC Token>" becomes 130d76e6-aa98-4ba9-b2db-fd78cXXXX33". You should receive a 
+So for example `<HEC Token>"` becomes 130d76e6-aa98-4ba9-b2db-fd78cXXXX33". You should receive a 
   `{"text":"Success","code":0}$` if the steps have been correctly followed.
  
 In the next step we are going to explore how we can search for these events. 
