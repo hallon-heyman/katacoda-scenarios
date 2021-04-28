@@ -1,10 +1,8 @@
 # Setting up Splunk enterprize in Docker container
 
-After the docker image has been downloaded we can start the container from the image.
+After the docker image has been downloaded we can start the container from the image. It might take a minute or two for docker to pull and extract splunk depending on your setup.
 
-Note that in the run arguments below, we have added a simple password for you.
-
-`docker run -d -p 8000:8000 -p 8088:8088 -e "SPLUNK_START_ARGS=--accept-license" -e "SPLUNK_PASSWORD=123abc456DEF!" --name splunk splunk/splunk:latest`{{execute}}  
+`docker run -d -p 8000:8000 -p 8088:8088 -e "SPLUNK_START_ARGS=--accept-license" -e "SPLUNK_PASSWORD=3aSteR3GG!" --name splunk splunk/splunk:latest`{{execute}}  
 
 The arguments in this command are explained as follows:
 
@@ -20,10 +18,9 @@ To make sure that the container is running type
 `docker container ls`{{execute}}  
 and look for the status to be healthy.
 
-`curl localhost`{{execute}}
 
 Unfortunately, kanakoda is restricted in the sense that it does not support simulating individual user tabs, but it does support opening a new one for the new server we just got running from our container.
-After the container status is confirmed healthy you can click localhost:8000, the second terminal tab, and you will enter the Splunk enterprise app that we are now running from our container.
-You can login to the app with the username `admin` and the `<password>` you set in the previous command.  
+After the container status is confirmed healthy as per above, you can click port 8000, the second terminal tab, and you will enter the Splunk enterprise app that we are now running from our container.
+You can login to the app with the username `admin` and the `<password>` you set in the previous command. 
   
 In the next step we will go through some instructions on how to configure the splunk app in order to be able to send data. 
