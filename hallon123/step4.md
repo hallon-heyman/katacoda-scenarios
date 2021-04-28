@@ -20,6 +20,7 @@ In the next page go down to index and add all the indexes, next click on review 
 From the same page you can click on the button `Start searching` to navigate to the search page where we will search for our data that we will upload.
 
 ### Uploading data
-Now we are going to upload data with this curl command. Make sure to attach the token you created at `<HEC Token>` to the command. The `-d` is to signal that we are sending data to splunk the format of the data can be in raw text or JSON format. Try sending this command a bunch of times to transfer data to your splunk instance.
+Now we are going to upload data with this curl command. Make sure to attach the token you created at `<HEC Token>` to the command. The `-d` is to signal that we are sending data to splunk the format of the data can be in raw text or JSON format. Try sending this command a bunch of times with different values to the event parameter in the JSON data.
 
-`curl -k "https://localhost:8088/services/collector" -H "Authorization: Splunk <HEC Token>" -d '{"event":"hello world", "sourcetype":"manual"}'`
+`curl -k "https://localhost:8088/services/collector" -H "Authorization: Splunk <HEC Token>" -d '{"event":"hello world", "sourcetype":"manual"}'`  
+In the next step we are going to explore how we can search for these events. 
