@@ -17,7 +17,7 @@ The arguments in this command are explained as follows:
 
 After the command is run it will print out a large hex that is the identifier of the container. 
 To make sure that the container is running type  
-`docker container ls` {{execute}}  
+`docker container ls`{{execute}}  
 and look for the status to be healthy.
 
 After the container status is healthy you can open localhost:8000 from the terminal window and you will enter the Splunk enterprise app.
