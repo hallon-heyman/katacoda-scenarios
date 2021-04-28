@@ -1,15 +1,22 @@
-# Introduction to Docker
+# Introduction to Docker, the why and the how
 
 Docker is perhaps the worlds leading devops tool and many programmers will alreayd be familiar with it. If you feel confident in your understanding of Docker you can skip this part.
 Otherwise, or if you feel like you would like to refresh your knowledge this step will give you an adequate understanding of Docker, why docker is so popular, 
 and some basic usage of it. 
 
+## The problem of server hosting
+
 Docker is perhaps best introduced through its history - as a solution to a problem. The story begins in the days of the early internet when large companies and entities such as
 foodchains, banks etc; with new, large prescences on the internet needed to maintaining hosting for their large and varied user needs. If these servers crashed the cost for the enterprise
-was potentially catastrophic, and different servers were required for the very varied user specifications. As such, server over-allocation was common and there was great inefficieny,
-at great financial cost. Virtualisation was the first solution to this problem.
+was potentially catastrophic, and different servers were required for the very varied user specifications. As such, server over-allocation was common and there was great inefficienyat great financial cost. Virtualisation arose as a solution to this problem.
+
+## Virtualisation
 
 Virtualisation as a concept and technology had already been around for decades, but it was a fringe functionality that was rarely used up til this point.
 In 2005, intel and AMD both added hardware-assisted support for virtualisation, and new companies such as VMware started spreading the functionality to the wider market.
 Through virtualisation, one host could run several OS or different applications and support a much wider range of different services to varied users, saving on required server infrastructure.
-Yet virtualisation is costly. Each virtualised OS or application requires its own simulated kernel and resources to run.
+Yet virtualisation is costly. If you are unfamiliar with the structure of virtualisation, it requires that a hypervisor is run on the original OS to create the necessary for the environment for the virtualised OS. This hypervisor in turn simulates a kernel and the virtualised OS in full, and finally, the intended executable can run on the virtualised OS.  As such, each virtualised OS or application requires its own hypervisor, simulated kernel, disk storage, RAM allocation, etc; to run. The technology Docker arose as a more efficient solution to the problem of serving a wide range of technological necessities while maintaining efficiency.
+
+## Containers
+
+Docker was released as open-source in 2013 as a new approach to virtualisation with Container Technology. Containers had been around for 10 years already at that point, but Docker added new functionality such as managing and creating your own containers and brought it into the mainstream. Docker introduces the Docker daemon which replaces the hypervisor. Instead of simulating a full OS with kernel, the docker daemon can utilises a container to completely empackage an application and run it without the need of simulating a full extra OS.
