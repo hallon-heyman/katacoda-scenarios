@@ -35,7 +35,7 @@
   },
   "environment": {
     "showdashboard": true,
-    "dashboards": [{"name": "localhost 8000", "href": "http://localhost:8000/"}],
+    "dashboards": [{"name": "Port 8000", "port": 8000}],
      "uilayout": "terminal"
   },
   "backend": {
