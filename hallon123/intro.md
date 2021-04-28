@@ -1,4 +1,7 @@
 # How to use Splunk through a Docker container
+
+![image](https://user-images.githubusercontent.com/62335201/116403937-70d68100-a82e-11eb-96c6-1382cf039134.png)
+
 This tutorial will teach you how to use the tool splunk enterprise through Docker. Docker is perhaps the worlds leading devopstool. Splunk is a monitoring tool used by many companies in order to analyse data comming from various systems.  Using docker to set up splunk is relatively easy and does not require you to install unecessary software on you machine thanks to this tutorial being run through katakoda. Remember that this instance of Splunk is entirely EPHEMERAL which is to say it will not remember anything you put in, when you close this tutorial all data that you uploaded to splunk will be lost, likewise, feel free to play around in the playground of an online tutorial.
 
 We will first introduce docker, its history and a brief summary of its underlying technology, and then move over to Splunk. If the user takes the time to fully read the background material accompanying the executable commands, the user will end this tutorial with a strong understanding of both docker and splunk, and how they are used together.
