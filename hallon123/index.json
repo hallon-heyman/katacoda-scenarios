@@ -2,7 +2,7 @@
   "title": "How to use Splunk through a Docker container",
   "description": "An executable tutorial for the course DD2482 DevOps KTH",
   "difficulty": "Beginner",
-  "time": "10 minutes",
+  "time": "15 minutes",
   "details": {
     "steps": [
       {
