@@ -10,7 +10,7 @@ like `hello world` and if you wrote some other
 
 To search for all your data you can search for entire indexes by typing `index=main`. This will show all the events because we specified that incomming data to the HEC will be stored in this index but you could ofcourse create different indexes to organise your incomming data.
 
-Another way to search for events is by searching for a specific timerange of the incomming events. this can be done with the keywords `earliest=[+|-]<time>` and `latest=[+|-]<time>` for example `earliest=-1m` will display events from 1 minute ago to the current time. 
+Another way to search for events is by searching for a specific timerange of the incomming events. this can be done with the keywords `earliest=[+|-]<time>` and `latest=[+|-]<time>` for example `earliest=-1m` will display events from 1 minute ago to the current time, if there were events incomming at this time. 
 
 There is much you can do with splunk and we wont have time to go through all right now. 
 ## close down
