@@ -32,4 +32,4 @@ A docker container is created from a docker image, that is, a docker container i
 
 This ends our brief introduction to docker as you should have all the understanding you need to know what goes on behind the scenes in this tutorial. In katakoda it is not necessary to login to docker as every terminal is logged in by default, but a good tutorial reminds its user even of the basics.
 
-docker login {{executable}}
+`docker login`{{executable}}
