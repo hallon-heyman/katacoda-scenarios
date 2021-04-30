@@ -6,7 +6,7 @@ After the docker image has been downloaded we can start the container from the i
 
 The arguments in this command are explained as follows:
 * the `-d` is to say that we are launching a detached image
-* `-p` specifies what port we want to open for the communication between the host and the container, in this command we provide 2 `-p` flags the other one is the port we will use to set up out HTTP Event Collector.
+* `-p` specifies what port we want to open for the communication between the host and the container, in this command we provide 2 `-p` flags the other one is the port we will use to set up our HTTP Event Collector in the next step.
 * `-e` means that we are setting enviroment variables.
 * `"SPLUNK_PASSWORD=<password>"` sets the password for the splunk instance
 * `"SPLUNK_START_ARGS=--accept-license"` is necessary for the splunk to be run
