@@ -6,11 +6,11 @@ This page is where Splunk is best used, the search page lets you search, show st
 
 In the search bar, you can search for "Events", time ranges, and much more. The search syntax can be a bit tricky to understand.
 Start by searching for the different events you sent.
-like `hello world` and if you wrote some other.
+like `hello world index="history"` and if you wrote some other events.
 
-To search for all your data you can search for entire indexes by typing `index="main"`. This should show all the events because we specified that incoming data to the HEC will be stored in this index but you could of course create different indexes to organize your incoming data. If `index="main"` does not work, try `index ="history"`. These are the indexes you added in the previous step!
+To search for all your data you can search for entire indexes by typing `index="main"`. This should show all the events because we specified that incoming data to the HEC will be stored in this index but you could of course create different indexes to organize your incoming data. If `index="main"` does not work, try `index="history"`. These are the indexes you added in the previous step!
 
-Another way to search for events is by searching for a specific time range of the incoming events. this can be done with the keywords `earliest=[+|-]<time>` and `latest=[+|-]<time>` for example `earliest=-1m` will display events from 1 minute ago to the current time, if there were events incoming at this time. Keep in mind that the longer you wait the higher value on `<time>` is needed. If you set the `<time>` to `-1h` it should encapsulate all the events you sent during this tutorial.  
+Another way to search for events is by searching for a specific time range of the incoming events. this can be done with the keywords `earliest=[+|-]<time>` and `latest=[+|-]<time>` for example `earliest=-1m index="history"` will display events from 1 minute ago to the current time in the index history, if there were events incoming at this time. Keep in mind that the longer you wait the higher value on `<time>` is needed. If you set the `<time>` to `-1h` it should encapsulate all the events you sent during this tutorial, you might need to change the index to main to get it to work.  
 
 
 ## close down
