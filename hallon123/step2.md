@@ -1,8 +1,8 @@
 ## Introduction to Splunk
 ### Downloading image
 Now that we have a introduction to docker and images we can start small by downloading the Splunk enterprise image from the docker hub, to do this execute the following command.  
-`docker pull splunk/splunk:latest`{{execute}}  
-This might take some time so in the mean time you can read about Splunk down below.
+`docker pull splunk/splunk:latest`{{execute}}. As you now know, this fetches the latest version of the official Splunk image from the Docker Hub registry. 
+This might take some time so in the mean time you can read about Splunk down below. You can also use the commands from the first step to inspect it when you are done.
 
 ### What is Splunk
 Splunk is not open source but you can create a free trial to use Splunk. In this tutorial it is not required of you to create such free account. 
