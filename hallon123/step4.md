@@ -1,6 +1,8 @@
 ## Uploading data to Splunk
 There are many ways to send/upload data to a Splunk instance, you can upload files of raw data to analyze or you can forward logs from your systems to monitor in the interface. In this tutorial, we will send test data via curl commands in the terminal to an  
-HTTP Event Collector on Splunk (HEC). An HTTP Event Collector lets you send data and application events to your Splunk app over the HTTP (HTTPS) protocol
+HTTP Event Collector on Splunk (HEC). An HTTP Event Collector lets you send data and application events to your Splunk app over the HTTP (HTTPS) protocol.
+### Splunk events
+An event in splunk refers to any individual piece of data. The custom data that is sent to the Splunk app are called Splunk Events. This data can be in any format, for example a string, a number or a JSON object. In Splunk you can create custom event type that help you categories the incoming based on common characteristics.
 
 ### Creating HEC token
 To send data via HEC we need to create an event collector token in the Splunk app. To do this we need to enable HTTP event collector in the setting of the Splunk app.
