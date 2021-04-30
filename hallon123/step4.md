@@ -4,14 +4,14 @@ you can forward logs from your systems to monitor in the interface. In this tuto
 Http Event Collector on Splunk (HEC). An HTTP Event Collector lets you send data and application events to your Splunk app over the HTTP (HTTPS) protocol
 
 ### Creating HEC token
-In order to send data via HEC we need to create a event collector token on the splunk app. To do this we need to enable HTTP event collector in the setting of the Splunk app.
+In order to send data via HEC we need to create a event collector token in the Splunk app. To do this we need to enable HTTP event collector in the setting of the Splunk app.
 Start by going to your opened instance of splunk at localhost:8000 and navigate to  
  `settings -> Data inputs -> HTTP event collector` in the top navigationbar  
 In the top right corner press `Global Settings`
   
 In this window you want to make sure that the setting `All tokens` is enabled. 
 Also make sure that the HTTP port number corresponds to the same second port in the docker run command (should be port 8088). 
-After that is done save the settings.  
+After that is done save the settings. Now we have made sure that the splunk app can receive events via HTTP, no we need to create a token for authorization
   
 In the same window click on `New token` next to `Global Settings`.  
 Give the token a name of your own choice. Click on next in the top to get to input settings.
