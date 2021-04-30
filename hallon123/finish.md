@@ -6,4 +6,4 @@ If you want to learn more about Splunk, [tutorialpoint](https://www.tutorialspoi
 
 This tutorial was brought to you by Hugo Heyman (hallon-heyman) and August Jönsson (Augustjon)
 
-ps. Did you notice the easter egg?
+ps. Did you notice the easter egg? (hint: inspect the password closely)
