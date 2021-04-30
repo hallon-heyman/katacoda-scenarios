@@ -8,7 +8,7 @@ In the search bar you can search for "Events", timeranges and much more. The sea
 Start by searching for the different events you sent.
 like `hello world` and if you wrote some other .
 
-To search for all your data you can search for entire indexes by typing `index="main"`. This should show all the events because we specified that incomming data to the HEC will be stored in this index but you could ofcourse create different indexes to organise your incoming data. If `index="main"` does not work, try `index = "history"`. These are the indexes you added in the previous step!
+To search for all your data you can search for entire indexes by typing `index="main"`. This should show all the events because we specified that incomming data to the HEC will be stored in this index but you could ofcourse create different indexes to organise your incoming data. If `index="main"` does not work, try `index ="history"`. These are the indexes you added in the previous step!
 
 Another way to search for events is by searching for a specific timerange of the incomming events. this can be done with the keywords `earliest=[+|-]<time>` and `latest=[+|-]<time>` for example `earliest=-1m` will display events from 1 minute ago to the current time, if there were events incomming at this time. Keep in mind that the longer you wait the higher value on `<time>` is needed. If you set the `<time>` to `-1h` it should encapsulate all the event you sent during this tutorial.  
 
