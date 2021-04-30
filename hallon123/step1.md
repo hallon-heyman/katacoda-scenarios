@@ -27,7 +27,7 @@ Every image has a unique hash ID. We can see ours by `docker inspect debian | gr
 
 Then we can run the container, from the image, using that id if we like!  `docker run -it sha256:0af60a5c6dd017d7023f6b6c71f3ffbb9beb2948d842bcb1ba36d597fb96e75a`{{executable}}.
 
-To exit this debian container, press press ctrl+d.
+To exit this debian container, press ctrl+d.
 
 The docker images can be fetched will pull just like git repositories through docker registries, where images can be pushed and pulled and distributed privately or publicly through the docker hub featre.
 
